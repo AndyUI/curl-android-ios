@@ -1,9 +1,9 @@
 #ARM optimizations
 ifeq ($(TARGET_ARCH),arm)
-  LOCAL_CFLAGS := -O3 -Os -mfpu=vfp -mfloat-abi=softfp -fno-short-enums
+  LOCAL_CFLAGS := -O3 -Os -fno-short-enums
 endif
 ifeq ($(TARGET_ARCH),arm64)
-  LOCAL_CFLAGS := -O3 -Os -mfpu=vfp -mfloat-abi=softfp -fno-short-enums
+  LOCAL_CFLAGS := -O3 -Os -fno-short-enums
 endif
 
 #x86 optimizations
